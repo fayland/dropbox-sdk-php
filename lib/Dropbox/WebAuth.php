@@ -19,7 +19,7 @@ namespace Dropbox;
  *    $appInfo = dbx\AppInfo::loadFromJsonFile(...);
  *    $clientIdentifier = "my-app/1.0";
  *    $redirectUri = "https://example.org/dropbox-auth-finish";
- *    $csrfTokenStore = new dbx\ArrayElementStore($_SESSION, 'dropbox-auth-csrf-token');
+ *    $csrfTokenStore = new dbx\ArrayEntryStore($_SESSION, 'dropbox-auth-csrf-token');
  *    return new dbx\WebAuth($appInfo, $clientIdentifier, $redirectUri, $csrfTokenStore, ...);
  * }
  *
